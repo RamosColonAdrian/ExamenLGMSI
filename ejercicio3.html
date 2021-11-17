@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+</head>
+<body>
+    <form id="formulario"  action="form.php" method="get">
+        <table border="1">
+            <tr>
+                <td><label for="email">Email(*)</label></td>
+                <td colspan="3">
+                    <input type="email" name="email" id="email" placeholder="Introduce tu correo">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="contraseña">Contraseña(*)</label></td>
+                <td colspan="3">
+                    <input type="password" name="pass" id="pass" max="6" placeholder="Máximo 6 caracteres">
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="valora">Valora la documentación</label> </td>
+                <td>
+                    <input type="radio" name="valora" id="buena" checked> 
+                    <label for="buena">Buena</label>
+                
+                
+                    <input type="radio" name="valora" id="normal"> 
+                    <label for="normal">Normal</label>
+                
+                
+                    <input type="radio" name="valora" id="mala"> 
+                    <label for="mala">Mala</label>
+                </td>
+            </tr>
+            <tr>
+                <td ><label for="secciones">¿Qué secciones te gustaron?</label></td>
+                <td >
+                    <input type="checkbox" name="secciones" id="sec"><label for="sec">Seccion 1</label><br>
+                    <input type="checkbox" name="secciones" id="sec"><label for="sec">Seccion 2</label><br>
+                    <input type="checkbox" name="secciones" id="sec"><label for="sec">Seccion 3</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="curso">Curso:</label></td>
+                <td>
+                    <select name="adasd" id="">
+                        <optgroup label="TIC I">
+                            <option value="1a">1ºA</option>
+                            <option value="1b">1ºB</option>
+                        </optgroup>
+                        <optgroup label="TIC II">
+                            <option value="2a">2ºA</option>
+                            <option value="2b">2ºB</option> 
+                        </optgroup>
+                    </select>
+    
+                </td>
+            </tr>
+        </table>
+        <br>
+        <footer>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </footer>
+      
+        
+    </form>
+    
+</body>
+</html>
